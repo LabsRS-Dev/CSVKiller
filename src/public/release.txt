@@ -1,0 +1,17 @@
+version 5.14.11826
+============================================================================
+
+--What's new
+¡ñ Add auto repeat test feature
+¡ñ Add show test progress detail information feature
+¡ñ Add sampling data real-time display feature
+¡ñ Add 'preferences' button on tool bar
+¡ñ Add stop test feature
+¡ñ Performance core test engine response speed and fault tolerance
+
+--What's fixed
+¡ñ change external IP getting mode
+¡ñ change 'IP information' window style
+¡ñ change download scale default value to 64
+¡ñ change 'Full history' display mode to bar
+¡ñ fix core model crash, when low memory

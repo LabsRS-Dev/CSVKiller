@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var WebSocket = window.WebSocket || window.MozWebSocket;
+    var ws = null;
+    var ws_id = 'ws' + (new Date()).getTime();
+
+    function startWS(port){
+        var _port = port || 8888;
+        ws = new WebSocket("ws://localhost:"+_port + "/websocket");
+        if(ws){
+            ws.onopen = function() {
+                 ws.send(JSON.stringify({'user_id':ws_id, 'msg_type':'c_notice_id_Info'}));
+            };
+
+            ws.onmessage = function (evt) {
+                alert(evt.data);
+            };
+        }
+
+    }
+
+    function testIn2CSV(){
+        var obj = {
+            'taskInfo':{
+                'task_id':(new Date()).getTime(),
+                'cli':'In2CSV',
+                'input_path':'D:/TestResource/xlsx/ne_1033_data.xlsx',
+                'output_path':'D:/TestResource/xlsx/ne_1033_data.csv'
+            },
+            'msg_type':'c_task_exec',
+            'user_id':ws_id
+        };
+
+        ws.send(JSON.stringify(obj));
+
+    }
+
+    function testIn2CSV_mac(){
+        var obj = {
+            'taskInfo':{
+                'task_id':(new Date()).getTime(),
+                'cli':'In2CSV',
+                'input_path':'/Volumes/DiskShareUser/Users/ian/TestResource/xls/ne_1033_data.xlsx',
+                'output_path':'/Volumes/DiskShareUser/Users/ian/TestResource/xls/ne_1033_data.csv'
+            },
+            'msg_type':'c_task_exec',
+            'user_id':ws_id
+        };
+
+        ws.send(JSON.stringify(obj));
+
+    }
+
+</script>
+</body>
+</html>

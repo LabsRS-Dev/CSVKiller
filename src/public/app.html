@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<script src="common/jquery/jquery.min.js"></script>-->
+    <!--<script src="common/jquery/jquery.json-2.4.js"></script>-->
+    <!--<script src="common/engine.io.client/1.5.1/engine.io.js"></script>-->
+    <!--<script src="common/hammerjs/hammer.min.js"></script>-->
+    <!--<script src="js/util.js"></script>-->
+    <!--<script src="js/bs.js"></script>-->
+    <!--<script src="common/requirejs/2.1.16/require.js"></script>-->
+    <!--<script src="common/smoothie/require.js"></script>-->
+    <script src="common/smoothie/smoothie.js"></script>
+    <script src="common/react/0.12.2/react-with-addons.min.js"></script>
+    <script src="common/react/0.12.2/JSXTransformer.js"></script>
+</head>
+<body>
+<div id="example"></div>
+<!--<script src="common/seajs/2.3.0/sea-debug.js"></script>-->
+
+<!--<script data-main="tjs/main.js" src="common/requirejs/2.1.16/require.js"></script>-->
+<!--<script data-main="tjs/main.js" src="common/requirejs/2.1.16/require.js"></script>-->
+<script type="text/javascript">
+    var greeting = require('./mk.js');
+    greeting.sayHello();
+
+
+    var material = require('./ui.js');
+
+</script>
+</body>
+</html>

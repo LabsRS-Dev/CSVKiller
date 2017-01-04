@@ -1,0 +1,37 @@
+{
+    "AppTitle":"CSVKiller",
+    "AppDescription": "To converts various tabular data formats into CSV.",
+
+    "tab-main.text":  "Select",
+    "tab-settings.text": "Settings",
+    "tab-log.text": "Log",
+
+    "labelInputPath":"Directory:",
+    "spanInputPath":" (select a directory to rename exif image file.)",
+    "btn-select.tooltip":"Select a directory",
+    "labelFormat":"Format:",
+    "spanFormat":"(eg. {YYYY}{DD}{MM}_{Model}_Beach_Shoot_{Seq} 20140429_PENTAX K-x_Beach_Shoot_001.JPEG)",
+    "btn-help.tooltip":"show format help",
+
+    "options.recursive":"Recursive subdirectories",
+    "options.hide":"Include hidden files",
+    "options.enableSequence":"Starting sequence number (default: 1)",
+    "options.overwrite":"Overwrite existing files",
+	"options.deleteSource":"Delete the source file ",
+    "labelOutputPath":"Output:",
+    "spanOutputPath":"(select a directory to store you rename images.)",
+    "btn-selectOutDir.tooltip":"Select a directory",
+
+    "btn-clearLog.tooltip":"Clear all logs.",
+
+    "btn-process": "Rename",
+    "btn-processDir.tooltip": "Start to rename photos names.",
+
+
+    "dialog.format.title":"Format settings help",
+    "dialog.format.btn-ok":"Ok",
+
+    "log-rename-total-info":"Process files count = {{processedCount}}, skipped files count = {{skippedCount}}",
+
+    "msg-process-success":"rename finished!"
+}
